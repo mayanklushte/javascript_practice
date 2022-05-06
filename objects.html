@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let obj = {
+      //     name: "mayank",
+      //     age: 21,
+      //     "first-name": "mayank",
+      //   };
+
+      //   console.log(obj.age);
+
+      //   console.log(obj["name"]);
+      //   console.log(obj["first-name"]);
+
+      //   obj.e_id = 1;
+
+      //   obj.name = "demo";
+      //   console.log(obj);
+
+      let obj = {
+        firstName: "mayank",
+        lastName: "lushte",
+        age: 26,
+        num1: 23,
+        num2: 34,
+
+        msg: function () {
+          console.log(this.num1 + this.num2);
+          return `Hello ${this.firstName} ${this.lastName}. Your Age is ${this.age}`;
+        },
+
+        greet() {
+          return `Hello ${this.firstName} `;
+        },
+      };
+
+      console.log(obj.msg());
+      console.log(obj.greet());
+
+      let arr = [
+        1, 2, 3, 4, 5, 6, 76, 78, 4, 5, 6, 7, 8, 9, 10, 43, 54, 65, 65,
+      ];
+    </script>
+  </body>
+</html>
