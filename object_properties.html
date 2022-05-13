@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let obj = {
+        name: "mayank",
+        age: 23,
+        email: "lushtemayank@gmail.com",
+      };
+      let obj3 = {
+        name1: "ramesh",
+        age2: 23,
+        email3: "lushtemayank@gmail.com",
+      };
+
+      // for (i in obj) {
+      //   console.log(obj[i]);
+      // }
+
+      // let obj2 = Object.create(obj);
+      // let obj2 = Object.assign({}, obj);
+      let obj2 = Object.assign({}, obj3, obj);
+
+      // obj2.exp = 2;
+
+      // console.log(obj2.hasOwnProperty("name"));
+      // console.log(obj2.hasOwnProperty("exp"));\
+      // console.log(Object.values(obj))
+      // console.log(Object.entries(obj))
+
+      console.log(obj2)
+
+      // Object.defineProperty(obj, "num1", {
+      //   configurable: true,
+      //   enumerable: true,
+      //   writable: true,
+      //   value: 23,
+      // });
+      // Object.defineProperty(obj, "num2", {
+      //   configurable: false,
+      //   enumerable: false,
+      //   writable: false,
+      //   value: 23,
+      // });
+
+      //   console.log(obj);
+      //   delete obj.num1;
+      //   delete obj.num2;
+
+      //   console.log(obj);
+
+      //   for (const i in obj) {
+      //     console.log(i);
+      //   }
+
+      // obj.num1 = 100;
+      // obj.num2 = 43;
+      // console.log(obj);
+    </script>
+  </body>
+</html>
