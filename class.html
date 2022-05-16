@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   class MyFirstClass {
+      //     name = "mayank";
+
+      //     constructor(num1, num2) {
+      //       this.num1 = num1;
+      //       this.num2 = num2;
+      //     }
+
+      //     add() {
+      //       return this.num1 + this.num2;
+      //     }
+      //   }
+
+      //   console.log(MyFirstClass.name);
+
+      //   let obj1 = new MyFirstClass(23, 43);
+      //   let obj2 = new MyFirstClass(230, 430);
+
+      //   console.log(obj1.name);
+      //   console.log(obj1.num1);
+      //   console.log(obj1.num2);
+      //   console.log(obj1.add());
+      //   console.log(obj2.add());
+
+      //   class Person {
+      //     constructor(name) {
+      //       this.setName(name);
+      //     }
+      //     getName() {
+      //       return this.name;
+      //     }
+      //     setName(newName) {
+      //       newName = newName.trim();
+      //       if (newName === "") {
+      //         throw "The name cannot be empty";
+      //       }
+      //       this.name = newName;
+      //     }
+      //   }
+
+      //   let person = new Person("Jane Doe");
+      //   console.log(person); // Jane Doe
+
+      //   person.setName("Jane Smith");
+      //   console.log(person.getName());
+
+      class Person {
+        constructor(name) {
+          this.name = name;
+        }
+        get name() {
+          return this._name;
+        }
+        set name(newName) {
+          newName = newName.trim();
+          if (newName === "") {
+            throw "The name cannot be empty";
+          }
+          this._name = newName;
+        }
+      }
+
+      let obj = new Person("mayank lushte");
+
+      console.log(obj.name);
+
+      obj.name = "demo demo";
+      console.log(obj.name);
+    </script>
+  </body>
+</html>
